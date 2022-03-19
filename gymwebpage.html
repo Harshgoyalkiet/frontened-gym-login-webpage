@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gym website</title>
+    <link rel="stylesheet" href="harsh.css">
+    <style>
+        /* button designing */
+        .btn {
+            border-radius: 20px;
+            background-color: orange;
+            border: 4px dotted orangered;
+            font-family: fantasy;
+            padding: 20px;
+            cursor: pointer;
+
+        }
+
+        .btn:hover {
+            color: black;
+            background-color: rgb(236, 240, 16);
+            color: green;
+
+        }
+
+        /* css reset */
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('gym website images/background2.jpg' )no-repeat center;
+            background-color:black;
+
+        }
+
+        /* positions setttings */
+        .left {
+            border: 4px dotted orangered;
+            position: absolute;
+            left: 34px;
+            display: inline-block;
+            top: 20px;
+            background-color: orange;
+            border-radius: 50px;
+
+
+        }
+
+        .logo:hover {
+            background-color: rgb(238, 238, 9);
+            border-radius: 50px;
+        }
+
+        .mid {
+
+            background-color: orange;
+            border: 4px dotted orangered;
+            border-radius: 28px;
+            margin: 12px auto;
+            display: block;
+            text-align: center;
+            top: 20px;
+            width: 50%;
+            font-size: large;
+            font-family: fantasy;
+
+
+        }
+
+        .mid:hover {
+            background-color: yellow;
+            border-radius: 28px;
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+
+            display: inline-block;
+            top: 20px;
+        }
+
+        /* navigation bar */
+        .navbar {
+            display: inline-block;
+
+
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+        .navbar li a {
+            color: orangered;
+            text-decoration: none;
+            padding: 20px;
+            margin: auto;
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: green;
+            text-decoration: underline;
+
+        }
+
+        /* now we are making a form  */
+        .container {
+            padding: 50px;
+            margin-left: 80px;
+            margin-top: 400px;
+            border: 4px dotted orangered;
+            width: 500px;
+            display: block;
+            background-color: orange;
+            border-radius: 50px;
+            font-family: fantasy;
+            font-language-override: initial;
+
+
+        }
+
+        .container:hover {
+            background-color: yellow;
+            border: 10px dotted orangered;
+        }
+
+        #are:hover {
+            color: red;
+        }
+
+        #myg:hover {
+            color: red;
+        }
+
+        #pp:hover {
+            color: red;
+
+        }
+
+        #rr:hover {
+            color: red;
+        }
+
+        #cc:hover {
+            color: red;
+        }
+
+        /* footer */
+
+        .ft {
+            border: 4px dotted orangered;
+            /* border-radius:50px; */
+            background-color: orange;
+            margin: 10px 10px;
+            padding: 10px 10px;
+
+        }
+
+        .ft:hover {
+            background-color: yellow;
+            border: 6px dotted red;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header class="header">
+        <div class="left">
+            <img src="gym website images/gymlogo.png" alt="not able to load" class="logo">
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">home</a></li>
+                <li><a href="#">contact us</a></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">query</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">E-mail us now</button>
+        </div>
+    </header>
+    <div class="container">
+        <center>
+            <h2>please login:</h2>
+        </center>
+        <form action="backened.php">
+            <br>
+            <div>
+                <label for="nu">name</label>
+                <input type="text" name="my name" id="nu">
+            </div><br>
+            <br>
+            <div>
+                <label for="pu">Age group</label>
+
+                <select name="agegroup" id="agegroup">
+                    <option value="young" selected>0-18</option>
+                    <option value="old">18-30</option>
+                    <option value="medium">30-60</option>
+                    <option value="extra">more than 60</option>
+                </select>
+
+            </div><br>
+            <br>
+            <div>
+                <label for="are">Are you eligible?</label>
+                <input type="checkbox" name="chek" id="are" checked>
+            </div><br>
+            <br>
+            <div>
+                gender:male:<input type="radio" name="myg">female:<input type="radio" ,name="myg" id="myg">
+            </div><br>
+            <br>
+            <div>
+                <label for="pp">any suggestions about gym:</label>
+                <textarea name="any suggestions" id="pp" cols="30" rows="10"></textarea>
+            </div><br>
+            <br>
+            <div>
+                <label for="rr">email:</label>
+                <input type="email" name="rr" id="email">
+            </div><br>
+            <br>
+            <div>
+                <label for="cc">training:</label>
+                <select name="mycar" id="cc">
+                    <option value="verna" selected>shoulders</option>
+                    <option value="marazzo">legs workout</option>
+                    <option value="audi">fat loss</option>
+                    <option value="bmw">full body workout</option>
+                </select>
+            </div><br>
+            <br>
+            <div><input type="reset" name="reset my form now"></div><br>
+            <br>
+            <div><input type="submit" name="submit now"></div><br>
+        </form>
+
+    </div>
+
+    <div class="ft">
+        <footer class="footer" id="footer">
+            e-mailus at:- harshgoyalg@gmail.com<br>
+            contact us at:- 7599004136<br>
+            <center>
+                <copyright>All rights reserved!</copyright>
+            </center>
+
+
+
+        </footer>
+    </div>
+
+
+</body>
+
+</html>
